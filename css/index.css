@@ -13,12 +13,20 @@ body {
 }
 
 .tegning{
-    
+    width: auto;
+    height: 500px;
 }
 
 @media (width > 700px) {
     .logo{
         height: 130px;
         margin-top: -40px;
+    }
+
+    .tegning{
+        width: 60%;
+        height: 900px;
+        margin-top: -200px;
+        margin-left: 560px;
     }
 } 
