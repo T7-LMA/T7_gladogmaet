@@ -24,9 +24,11 @@ body {
     }
 
     .tegning{
-        width: 60%;
-        height: 900px;
-        margin-top: -200px;
-        margin-left: 560px;
+        height: 1200px;
+        aspect-ratio: 2/5;
+        overflow: hidden;
+        object-fit: cover;
+        margin-left: 59%;
+        margin-top: -15%;
     }
 } 
