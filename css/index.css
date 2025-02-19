@@ -30,6 +30,8 @@ footer{
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 a{
@@ -49,5 +51,22 @@ a{
         height: 750px;
         margin-top: -200px;
         margin-left: 560px;
+    }
+
+    footer{
+        font-family: H1;
+        display: inline-block;
+        border: 2px solid #AE272D;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 10px;
+        margin-left: 50px;
+        margin-top: -300px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #4E2323;
+        text-align: center;
     }
 } 

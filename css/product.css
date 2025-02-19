@@ -40,9 +40,10 @@ h1{
     border-width: 2px;
 }
 .book{
+    min-height: 350px;
     max-width: 90%;
     margin: 1%;
-    margin-right: 1%;
+    margin-left: 4%;
     margin-top: 10%;
     font-family: H1;
     display: grid;
@@ -59,13 +60,18 @@ h2{
     display: inline-block;
     border: 1px solid black;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 li{
-    list-style-type: none;
-    line-height: 2;
+    list-style-type: disc;
+    line-height: 2.3;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
+
 .page_left{
     border-right-style: solid;
     border-right-color: #4d4747;
@@ -73,11 +79,15 @@ li{
     border-radius: 5px;
 }
 .page_right{
-    line-height: 0.8;
+    line-height: 1.7;
     border-left-style: solid;
     border-left-color: #4d4747;
     border-width: 2px;
     border-radius: 5px;
+    font-size: 15px;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .contact-form {
@@ -203,22 +213,28 @@ footer{
         margin-left: 50%;
         display: inline-block;
         border: 1px solid black;
-        padding: 5px 15px;
+        padding: 15px 25px;
         border-radius: 20px;
         font-size: 40px;
+        margin-top: 20px;
     }
 
     li{
-        list-style-type: none;
+        list-style-type: disc;
+         line-height: 2.3;
+        padding-top: 100px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .page_left{
-        line-height: 1.9;
         font-size: 25px;
     }
     .page_right{
-        line-height: 1;
+        line-height: 2;
         font-size: 25px;
-        margin-top: 140px;
+        padding-top: 130px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .contact-form {

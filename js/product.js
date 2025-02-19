@@ -2,21 +2,18 @@ console.log("script hentet");
 
 const webForm = document.querySelector(".webForm");
 const params = new URLSearchParams(window.location.search);
-//const id = params.get("id");
-const id = "1";
+const id = params.get("id");
 
 fetch(`https://dummyjson.com/recipes/${id}`)
 .then((response) => response.json())
 .then(showProduct);
 
 function showProduct(data) {
-    const markup = data.recipes.id
-    .map(
-        (recipe) =>
-            `<div class="web_1">
-          <h1>${recipe.name}</h1>
+    const markup = 
+        `<div class="web_1">
+          <h1>${data.name}</h1>
           <img
-            src="${recipe.image}"
+            src="${data.image}"
             alt="pizza"
             class="image"
           />
@@ -26,17 +23,15 @@ function showProduct(data) {
             <div class="page_left">
               <h2>Ingredients</h2>
               <ul>
-                <li>${recipe.ingredients}</li>
+                <li>${data.ingredients}</li>
               </ul>
             </div>
             <div class="page_right">
-              <p>${recipe.instructions}</p>
+              <p>${data.instructions}</p>
             </div>
           </div>
         </div>
-      </div>`
-    )
-    .join("");
-    console.log(markup);
-    showProduct.innerHTML = markup;
+      </div>`;
+
+    webForm.innerHTML = markup;
 }
