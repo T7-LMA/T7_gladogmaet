@@ -1,0 +1,139 @@
+* {
+  max-width: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(/img/T07_baggrund-kopi.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  width: auto;
+  height: 120px;
+  margin-top: -40px;
+}
+
+.burgermenu {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 6%;
+  right: 3.5%;
+}
+
+.burgermenu .line {
+  width: 30px;
+  height: 4px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav_links {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  background: rgb(28, 28, 28);
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: rgb(250, 239, 230);
+  font-size: 60px;
+  transition: color 0.3s ease;
+  padding-right: 10rem;
+  font-size: 50px;
+  font-family: "inter-tight-variable", sans-serif;
+}
+
+.nav_links a:hover {
+  color: rgb(116, 115, 115);
+}
+
+.nav_links.show {
+  display: flex;
+}
+
+.burgermenu.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: rgb(250, 239, 230);
+  width: 110%;
+}
+
+.burgermenu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgermenu.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: rgb(250, 239, 230);
+  width: 110%;
+}
+
+.kategoribillede {
+  border-radius: 50%;
+  border: solid 1px #af272e;
+}
+
+.productlistContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.recipe_card {
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe_card a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  color: #4e2323;
+}
+
+h3:hover {
+  color: #713b3e;
+}
+
+footer {
+  background-color: #af272e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  padding: 50px;
+  margin-top: 30px;
+}
+
+@media (width > 700px) {
+  .logo {
+    height: 230px;
+    margin-top: -60px;
+  }
+}
