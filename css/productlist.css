@@ -1,3 +1,8 @@
+@font-face {
+  font-family: H1;
+  src: url(/fonts/Caveat-VariableFont_wght-kopi.ttf);
+}
+
 * {
   max-width: 100%;
   margin: 0;
@@ -13,8 +18,9 @@ body {
 
 .logo {
   width: auto;
-  height: 120px;
-  margin-top: -40px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .burgermenu {
@@ -30,7 +36,7 @@ body {
 .burgermenu .line {
   width: 30px;
   height: 4px;
-  background-color: rgb(28, 28, 28);
+  background-color: #a80000;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -42,26 +48,28 @@ body {
   position: absolute;
   top: 0;
   right: 1%;
-  background: rgb(28, 28, 28);
+  background-color: #a80000;
   padding-left: 4rem;
   padding-bottom: 4rem;
   padding-top: 4rem;
   list-style-type: none;
+  border-radius: 20px;
+  margin-top: 20px;
   z-index: 1;
 }
 
 .nav_links a {
   text-decoration: none;
-  color: rgb(250, 239, 230);
+  color: #fffefa;
   font-size: 60px;
   transition: color 0.3s ease;
   padding-right: 10rem;
   font-size: 50px;
-  font-family: "inter-tight-variable", sans-serif;
+  font-family: H1;
 }
 
 .nav_links a:hover {
-  color: rgb(116, 115, 115);
+  color: rgb(226, 190, 190);
 }
 
 .nav_links.show {
@@ -74,7 +82,7 @@ body {
   top: 145%;
   right: 0;
   z-index: 2;
-  background-color: rgb(250, 239, 230);
+  background-color: #fffefa;
   width: 110%;
 }
 
@@ -88,13 +96,13 @@ body {
   top: 145%;
   right: 0;
   z-index: 2;
-  background-color: rgb(250, 239, 230);
+  background-color: #fffefa;
   width: 110%;
 }
 
 .kategoribillede {
   border-radius: 50%;
-  border: solid 1px #af272e;
+  border: solid 2px #af272e;
 }
 
 .productlistContainer {
@@ -108,32 +116,47 @@ body {
   text-align: center;
 }
 
-.recipe_card a {
-  text-decoration: none;
+h2 {
+  color: #4e2323;
+  font-family: H1;
+  font-size: 30px;
 }
 
-h2,
 h3 {
   color: #4e2323;
+  font-family: H1;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h3:hover {
   color: #713b3e;
 }
 
+main {
+  padding-bottom: 80px;
+}
+
 footer {
-  background-color: #af272e;
-  color: white;
+  background-color: #a80000;
+  font-family: H1;
+  color: #fffefa;
   text-align: center;
+  margin-top: 10px;
   padding: 10px;
-  font-size: 14px;
-  padding: 50px;
-  margin-top: 30px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (width > 700px) {
   .logo {
-    height: 230px;
-    margin-top: -60px;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
   }
 }

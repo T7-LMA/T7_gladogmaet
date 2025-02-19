@@ -22,7 +22,7 @@ function showProduct(data) {
             <div class="page_left">
               <h2>Ingredients</h2>
               <ul>
-                <li>${data.ingredients}</li>
+                <li class="ingredients">${data.ingredients}</li>
               </ul>
             </div>
             <div class="page_right">
@@ -34,3 +34,13 @@ function showProduct(data) {
 
   webForm.innerHTML = markup;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgermenu = document.getElementById("burgermenu");
+  const navLinks = document.getElementById("nav_links");
+
+  burgermenu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    burgermenu.classList.toggle("open");
+  });
+});
