@@ -11,10 +11,88 @@ body {
   height: 100vh;
 }
 
+.burgermenu {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 6%;
+  right: 3.5%;
+}
+
+.burgermenu .line {
+  width: 30px;
+  height: 4px;
+  background-color: #a80000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav_links {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  background-color: #a80000;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  list-style-type: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #fffefa;
+  font-size: 60px;
+  transition: color 0.3s ease;
+  padding-right: 10rem;
+  font-size: 50px;
+  font-family: H1;
+}
+
+.nav_links a:hover {
+  color: rgb(226, 190, 190);
+}
+
+.nav_links.show {
+  display: flex;
+}
+
+.burgermenu.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: #fffefa;
+  width: 110%;
+}
+
+.burgermenu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgermenu.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: #fffefa;
+  width: 110%;
+}
+
 .logo {
   width: auto;
-  height: 120px;
-  margin-top: -40px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 * {
@@ -64,7 +142,7 @@ h1 {
     margin-top: 15px;
   }
 
-  li {
+  .ingredients {
     list-style-type: disc;
     line-height: 2.3;
     padding-top: 20px;
@@ -152,8 +230,9 @@ h1 {
 
 @media (min-width: 700px) {
   .logo {
-    height: 230px;
-    margin-top: -60px;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 20px;
   }
 
   h1 {
@@ -214,7 +293,7 @@ h1 {
     margin-top: 20px;
   }
 
-  li {
+  .ingredients {
     list-style-type: disc;
     line-height: 2.3;
     padding-top: 100px;

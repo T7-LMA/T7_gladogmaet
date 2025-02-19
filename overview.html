@@ -6,31 +6,42 @@
     <link rel="stylesheet" href="../css/overview.css" />
     <title>Overview</title>
     <link rel="icon" type="image/x-icon" href="img/Logo_T07_done-kopi.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
 <script src="js/overview.js" defer></script>
   </head>
   <body>
     <header>
        <a href="index.html"><img src="img/Logo_T07_done-kopi.webp" alt="logo" class="logo" /></a>
+
+       <nav>
+        <div class="burgermenu" id="burgermenu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav_links" id="nav_links">
+            <li><a href="overview.html">Recipes</a></li>
+                <li><a href="productlist.html?category=Appetizer">Starters</a></li>
+                <li><a href="productlist.html?category=Dinner">Mains</a></li>
+                <li><a href="productlist.html?category=Dessert">Desserts</a></li>
+        </ul>
+    </nav>
     </header>
     <main>
         <h1>
-            Recepies
+            Recipes
         </h1>
         <section class="grid-2">
             <div class="text">
                 <div>
-                    <a href="productlist.html?category=Appetizer"><h2>Appetizer</h2></a>
+                    <a href="productlist.html?category=Appetizer"><h2><u>Starters</u></h2></a>
                     <p>Small dishes to start a lovely dinner off.</p>
                 </div>
                 <div>
-                    <a href="productlist.html?category=Dinner"><h2>Mains</h2></a>
+                    <a href="productlist.html?category=Dinner"><h2><u>Mains</u></h2></a>
                     <p>The main character to your evening.</p>
                 </div>
                 <div>
-                    <a href="productlist.html?category=Dessert"><h2>Desserts</h2></a>
+                    <a href="productlist.html?category=Dessert"><h2><u>Desserts</u></h2></a>
                     <p>The big sweet finale.</p>
                 </div>
             </div>
@@ -38,6 +49,6 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer>&copy; Mæt & Glad</footer>
   </body>
 </html>

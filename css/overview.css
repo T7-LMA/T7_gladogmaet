@@ -1,14 +1,102 @@
+@font-face {
+  font-family: H1;
+  src: url(/fonts/Caveat-VariableFont_wght-kopi.ttf);
+}
+
+* {
+  margin: 0;
+}
+
 body {
   background-image: url(/img/T07_baggrund-kopi.webp);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   width: 100vw;
   height: 100vh;
+}
+
+.burgermenu {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 6%;
+  right: 3.5%;
+}
+
+.burgermenu .line {
+  width: 30px;
+  height: 4px;
+  background-color: #a80000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav_links {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  background-color: #a80000;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  list-style-type: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #fffefa;
+  font-size: 60px;
+  transition: color 0.3s ease;
+  padding-right: 10rem;
+  font-size: 50px;
+  font-family: H1;
+}
+
+.nav_links a:hover {
+  color: rgb(226, 190, 190);
+}
+
+.nav_links.show {
+  display: flex;
+}
+
+.burgermenu.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: #fffefa;
+  width: 110%;
+}
+
+.burgermenu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgermenu.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 145%;
+  right: 0;
+  z-index: 2;
+  background-color: #fffefa;
+  width: 110%;
 }
 
 .logo {
   width: auto;
   height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .tegning {
@@ -17,12 +105,12 @@ body {
   overflow: hidden;
   object-fit: cover;
   margin-top: -20%;
-  margin-left: 2cqw;
+  margin-left: 10px;
 }
 
 h1 {
   margin-top: 17%;
-  font-family: "Montez", serif;
+  font-family: "caveat", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 45px;
@@ -36,30 +124,51 @@ h1 {
 
 .text {
   margin-top: 11%;
-  line-height: 5cqw;
+  margin-left: 10px;
 }
 
-.text h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
+h1 {
+  font-family: "caveat", sans-serif;
+  margin-left: 10px;
+}
+
+h2 {
+  font-family: "caveat", sans-serif;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 .text a {
   text-decoration: none;
   color: #4e2323;
+  font-size: 25px;
 }
 
 .text p {
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 15cqw;
+  font-family: "caveat", sans-serif;
+  margin-bottom: 5px;
   color: #4e2323;
+  font-size: 20px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #a80000;
+  font-family: H1;
+  color: #fffefa;
+  text-align: center;
+  margin-top: 90px;
+  padding: 10px;
+  font-size: 20px;
 }
 
 @media (width > 700px) {
   .logo {
-    height: 80px;
-    margin-top: 10px;
-    margin-left: 1em;
+    height: 100px;
+    margin-top: 27px;
+    padding-left: 20px;
+    margin-left: 18px;
   }
 
   .tegning {
@@ -74,23 +183,25 @@ h1 {
   h1 {
     margin-top: 4.5%;
     font-size: 65px;
-    margin-left: 4cqw;
+    margin-left: 10px;
   }
 
   .text {
-    margin-left: 5cqw;
-    line-height: 1.8cqw;
+    margin-left: 20px;
+    line-height: 50px;
     margin-top: 5%;
   }
 
   .text h2 {
-    font-size: 32px;
+    font-size: 45px;
+    margin-bottom: 20px;
   }
 
   .text p {
-    font-size: 20px;
-    margin-bottom: 6cqw;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
+
   main {
     margin-left: 12%;
   }
