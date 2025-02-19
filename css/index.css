@@ -1,32 +1,71 @@
+@font-face {
+  font-family: H1;
+  src: url(/fonts/Caveat-VariableFont_wght-kopi.ttf);
+}
+
 body {
-    background-image: url(/img/T07_baggrund-kopi.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+  background-image: url(/img/T07_baggrund-kopi.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
-.logo{
-    width: auto;
-    height: 120px;
-    margin-top: -40px;
+.logo {
+  width: auto;
+  height: 120px;
+  margin-top: -40px;
 }
 
-.tegning{
-    width: auto;
-    height: 500px;
+.tegning {
+  width: auto;
+  height: 500px;
+}
+
+footer {
+  font-family: H1;
+  display: inline-block;
+  border: 2px solid #ae272d;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 10px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #4e2323;
+  text-align: center;
 }
 
 @media (width > 700px) {
-    .logo{
-        height: 130px;
-        margin-top: -40px;
-    }
+  .logo {
+    height: 230px;
+    margin-top: -60px;
+  }
 
-    .tegning{
-        width: 60%;
-        height: 900px;
-        margin-top: -200px;
-        margin-left: 560px;
-    }
-} 
+  .tegning {
+    width: 60%;
+    height: 750px;
+    margin-top: -200px;
+    margin-left: 560px;
+  }
+
+  footer {
+    font-family: H1;
+    display: inline-block;
+    border: 2px solid #ae272d;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-top: -300px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4e2323;
+    text-align: center;
+  }
+}
