@@ -57,7 +57,8 @@ body {
   transition: color 0.3s ease;
   padding-right: 10rem;
   font-size: 50px;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
 }
 
 .nav_links a:hover {
@@ -128,12 +129,14 @@ h1 {
 }
 
 h1 {
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   margin-left: 10px;
 }
 
 h2 {
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   font-size: 30px;
   margin-left: 10px;
 }
@@ -145,7 +148,8 @@ h2 {
 }
 
 .text p {
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   margin-bottom: 5px;
   color: #4e2323;
   font-size: 20px;
