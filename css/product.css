@@ -1,14 +1,19 @@
 @font-face {
   font-family: H1;
-  src: url('fonts/Caveat-VariableFont_wght-kopi.ttf');
+  src: url("fonts/Caveat-VariableFont_wght-kopi.ttf");
 }
 
-body {
-  background-image: url('img/T07_baggrund-kopi.webp');
+* {
+  margin: 0;
+}
+
+.baggrund {
   background-size: cover;
   background-repeat: repeat;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
+  position: fixed;
 }
 
 .burgermenu {
