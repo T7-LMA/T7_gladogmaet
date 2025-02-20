@@ -128,12 +128,12 @@ h1 {
 }
 
 h1 {
-  font-family: "caveat", sans-serif;
+  font-family: H1;
   margin-left: 10px;
 }
 
 h2 {
-  font-family: "caveat", sans-serif;
+  font-family: H1;
   font-size: 30px;
   margin-left: 10px;
 }
@@ -145,7 +145,7 @@ h2 {
 }
 
 .text p {
-  font-family: "caveat", sans-serif;
+  font-family: H1;
   margin-bottom: 5px;
   color: #4e2323;
   font-size: 20px;
