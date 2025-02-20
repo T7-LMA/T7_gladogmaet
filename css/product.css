@@ -53,7 +53,8 @@ body {
   transition: color 0.3s ease;
   padding-right: 10rem;
   font-size: 50px;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
 }
 
 .nav_links a:hover {
@@ -101,7 +102,8 @@ body {
 }
 
 h1 {
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   text-align: center;
   font-size: 40px;
   margin-top: -10px;
@@ -123,7 +125,8 @@ h1 {
     margin: 1%;
     margin-left: 4%;
     margin-top: 10%;
-    font-family: H1;
+    font-family: "Caveat", serif;
+    font-style: normal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #fffefa;
@@ -219,7 +222,8 @@ h1 {
 
   footer {
     background-color: #a80000;
-    font-family: H1;
+    font-family: "Caveat", serif;
+    font-style: normal;
     color: #fffefa;
     text-align: center;
     margin-top: 10px;
@@ -269,7 +273,8 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #fffefa;
-    font-family: H1;
+    font-family: "Caveat", serif;
+    font-style: normal;
   }
 
   .image {
@@ -362,7 +367,8 @@ h1 {
 
   footer {
     background-color: #a80000;
-    font-family: H1;
+    font-family: "Caveat", serif;
+    font-style: normal;
     color: #fffefa;
     text-align: center;
     margin-top: 10px;

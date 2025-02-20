@@ -53,7 +53,8 @@ body {
   transition: color 0.3s ease;
   padding-right: 10rem;
   font-size: 50px;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
 }
 
 .nav_links a:hover {
@@ -101,7 +102,8 @@ body {
 }
 
 footer {
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   display: inline-block;
   border: 2px solid #ae272d;
   padding: 5px 15px;
@@ -135,7 +137,8 @@ a {
   }
 
   footer {
-    font-family: H1;
+    font-family: "Caveat", serif;
+    font-style: normal;
     display: inline-block;
     border: 2px solid #ae272d;
     padding: 5px 15px;

@@ -65,7 +65,8 @@ body {
   transition: color 0.3s ease;
   padding-right: 10rem;
   font-size: 50px;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
 }
 
 .nav_links a:hover {
@@ -118,13 +119,15 @@ body {
 
 h2 {
   color: #4e2323;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   font-size: 30px;
 }
 
 h3 {
   color: #4e2323;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   font-size: 25px;
 }
 
@@ -142,7 +145,8 @@ main {
 
 footer {
   background-color: #a80000;
-  font-family: H1;
+  font-family: "Caveat", serif;
+  font-style: normal;
   color: #fffefa;
   text-align: center;
   margin-top: 10px;
